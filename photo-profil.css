@@ -49,15 +49,16 @@ header .contact {
     cursor: pointer;
     transform: translateX(11vw) translateY(-1vh);
     opacity: 0.7;
+    color: white;
 }
 .subscribe-form>div>label>input {
     display: none;
 }
 .subscribe-form div label span {
-    color: rgb(1, 21, 51);
+    color: black;
 }
 .subscribe-form div label input:checked+span {
-    color: rgb(37, 2, 102);
+    color: #612003;
 }
 .subscribe-form>div>label>input+span::before {
     content: "◎";
@@ -73,7 +74,7 @@ header .contact {
 
 .contact {
     position: absolute;
-    left: 0.4vw;
+    left: 0.2vw;
     top: 0;
     z-index: 1;
 
@@ -99,13 +100,13 @@ a {
     padding: 0.5vh 0px;
     margin-left: 1vw;
     display: block;
-    color: rgb(50, 14, 2);
+    color: #fef100;
     font-size: 1.3vw;
     font-family: 'Skranji', cursive;
 }
 a:hover {
-    color: rgb(50, 14, 2);
-    background-color: #8c633a;
+    color: wheat;
+    background-color: rgb(172, 68, 3);
     border-radius: 0 2vw 2vw 0;
     box-shadow: 2px 2px 5px 2px gray;
 }
@@ -117,10 +118,10 @@ a:hover {
     width: 4vw;
     border-radius: 2vw;
     line-height: 4.4vh;
-    background-color: #473727;
+    background-color: rgb(85, 23, 3);
     font-family: 'Skranji', cursive;
     font-size: 1.5vw;
-    color: rgb(188, 120, 97);
+    color: white;
     text-align: center;
 }
 .toggler:hover {
@@ -133,7 +134,7 @@ a:hover {
 header .fon {
     position: absolute;
     z-index: 1;
-    top: 35vh;
+    top: 30vh;
     left: 48.5vw;
     width: 40vw;
     height: 15vh;
@@ -144,19 +145,19 @@ header .fon {
 header h1 {
     z-index: 2;
     position: absolute;
-    top: 30vh;
+    top: 25vh;
     left: 50vw;
     font-family: 'Dela Gothic One', cursive;
     font-size: 8vh;
-    color: rgb(2, 33, 77);
+    color: #fb0186;
 }
 header h2 {
     position: absolute;
     z-index: 1;
-    top: 43vh;
-    left: 53vw;
+    top: 38vh;
+    left: 52vw;
     font-family: 'Autour One', cursive;
-    color: #4c1a01;
+    color: rgb(167, 255, 5);
 }
 
 
