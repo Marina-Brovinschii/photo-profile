@@ -141,6 +141,7 @@ header .fon {
     border-radius:0 5vw 0 5vw;
     background-color: #395877;
     opacity: 0.6;
+    box-shadow: 0 0 20px 10px darkorange;
 }
 header h1 {
     z-index: 2;
@@ -151,6 +152,9 @@ header h1 {
     font-size: 8vh;
     color: #fb0186;
 }
+header h1:hover {
+    animation: ondulare 5s linear infinite;
+}
 header h2 {
     position: absolute;
     z-index: 1;
@@ -159,57 +163,128 @@ header h2 {
     font-family: 'Autour One', cursive;
     color: rgb(167, 255, 5);
 }
+header h2:hover {
+    animation: ondulare 5s linear infinite;
+}
 
 
 
 header .photos img {
     position: absolute;
     object-fit: cover;
+    animation: efect 2s infinite alternate linear;
 }
 header .photos img:nth-child(1) {
     top: 0;
     left: 5vw;
     width: 33.5vw;
     height: 36vh;
+    animation-delay:-1s;
+}
+header .photos img:nth-child(1):hover {
+    animation: axaY 15s;
+    box-shadow: 0 0 20px 10px #152a3f;
 }
 header .photos img:nth-child(2) {
     top: 0;
     left: 38.8vw;
     height: 60vh;
     width: 20vw;
+    animation-delay: -3s;
+}
+header .photos img:nth-child(2):hover {
+    animation: axaY 15s;
+    box-shadow: 0 0 20px 10px #152a3f;
 }
 header .photos img:nth-child(3) {
     top: 0;
     left: 59.2vw;
     width:39vw;
     height: 40vh;
+    animation-delay: -2s;
+}
+header .photos img:nth-child(3):hover {
+    animation: axaY 15s;
+    box-shadow: 0 0 20px 10px #152a3f;
 }
 header .photos img:nth-child(4) {
     top: 36.7vh;
     width: 30vw;
     height: 63vh;
+    animation-delay: -2s;
+}
+header .photos img:nth-child(4):hover {
+    animation: axaY 15s;
+    box-shadow: 0 0 20px 10px #152a3f;
 }
 header .photos img:nth-child(5) {
     top: 40.7vh;
     left: 80.2vw;
     width: 18vw;
     height: 59vh;
+    animation-delay: -1s;
+}
+header .photos img:nth-child(5):hover {
+    animation: axaY 15s;
+    box-shadow: 0 0 20px 10px #152a3f;
 }
 header .photos img:nth-child(6) {
     top: 40.7vh;
     left: 59.2vw;
     width: 20.5vw;
     height: 59vh;
+    animation-delay: -3s;
+}
+header .photos img:nth-child(6):hover {
+    animation: axaY 15s;
+    box-shadow: 0 0 20px 10px #152a3f;
 }
 header .photos img:nth-child(7) {
     top: 60.7vh;
     left: 30.9vw;
     width: 28vw;
     height: 39vh;
+    animation-delay: -4s;
+}
+header .photos img:nth-child(7):hover {
+    animation: axaY 15s;
+    box-shadow: 0 0 20px 10px #152a3f;
 }
 header .photos img:nth-child(8) {
     top: 36.7vh;
     left: 30.9vw;
     width: 7.6vw;
     height: 23.3vh;
+    animation-delay: -2s;
+}
+header .photos img:nth-child(8):hover {
+    animation: axaY 15s;
+    box-shadow: 0 0 20px 10px #152a3f;
+}
+
+
+@keyframes efect {
+    from {opacity: 1;}
+    to {opacity: 0.6;}
+}
+
+@keyframes axaY {
+    from {transform: rotateY(0);}
+    50% {transform: rotateY(360deg);}
+    to {transform: rotateY(0);}
+}
+
+@keyframes ondulare {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(5%);
+    }
+    75% {
+        transform: translateX(-5%);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
